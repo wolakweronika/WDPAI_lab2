@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDPAI ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="requests.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Let's level up your brand, together</h1>
+
+            <form id="team-form">
+                <label for="first_name">First name</label>
+                <input type="text" id="first_name" placeholder="First name" required>
+
+                <label for="last_name">Last name</label>
+                <input type="text" id="last_name" placeholder="Last name" required>
+
+                <label for="role">Role</label>
+                <select id="role" required>
+                    <option value="" disabled selected>Select a role</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Designer">Designer</option>
+                    <option value="CTO">CTO</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Tester">Tester</option>
+                </select>
+
+                <label class="privacy-policy">
+                    <input type="checkbox" id="privacy_policy" required>
+                    You agree to our friendly  <a href="#"> privacy policy</a>.
+                </label>
+
+                <button type="submit" class="submit-button" disabled>SUBMIT</button>
+            </form>
+        </div>
+
+        <div class="team-list">
+            <ul id="team-members"></ul>
+        </div>
+    </div>
+</body>
+</html>
